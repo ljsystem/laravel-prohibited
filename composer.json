@@ -1,0 +1,52 @@
+{
+    "name": "ljsystem/laravel-prohibited",
+    "description": "Adds prohibited form request validations to your Laravel application.",
+    "keywords": [
+        "ljsystem",
+        "laravel-prohibited",
+        "validation",
+        "prohibited",
+        "not-allowed",
+        "laravel"
+    ],
+    "homepage": "https://github.com/ljsystem/laravel-prohibited",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Niklas Falemar",
+            "email": "niklas@ljsystem.se",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "illuminate/support": "^6.15",
+        "illuminate/translation": "^6.15",
+        "illuminate/validation": "^6.15"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ljsystem\\Prohibited\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ljsystem\\Prohibited\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ljsystem\\Prohibited\\ProhibitedServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
